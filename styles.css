@@ -1,0 +1,236 @@
+/* mobile first css design */
+/* base styles */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background:#00B050;
+  border: 1px solid grey;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  padding: 1.2em 2.5em;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.6);
+  font-size: 1em;
+}
+
+button:hover {
+  background: #0ca157;
+  border: 1px solid grey;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+img {
+  padding: 1em;
+  width: 110px;
+  height: 110px;
+}
+
+ul.lists {
+  margin-top: 5;
+  /* padding-top: 0; */
+}
+
+p.bold {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+footer {
+  font-size: 0.8rem;
+  /* position: absolute; */
+  bottom: 0;
+  width: 95%;
+  margin: 1em 0.2em;
+  font-size: 1em;
+  /* height: 1rem;  */
+}
+div.sign-in {
+  text-align: center;
+  padding-top: 1.1em;
+  margin-bottom: 2em;
+}
+
+.hyperlink-list {
+  padding-left: 18px;
+  font-size: 1.25rem;
+  margin: 1em 0;
+}
+
+.hyperlink-list li{
+  list-style-type: none;
+  padding: 0.05em;
+}
+#system-description, #privacy-act {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+/* The Privacy Modal (background) */
+.privacy-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Privacy Modal Content/Box */
+.privacy-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The System Description Modal (background) */
+.system-desc-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* System Description Modal Content/Box */
+.system-desc-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 920px) {
+img {
+  width: 170px;
+  height: 170px;
+}
+h1 {
+  font-size: 2.7em;
+  padding: 1.37rem;
+}
+button {
+  width: 28rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  padding: 1.5rem 
+}
+div.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.sign-in {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* margin: 3rem 0 0 15rem; */
+  justify-self: end;
+  align-self: end;
+  margin: 2rem 6.7rem 0 0;
+}
+.list-grid {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 1.3em;
+  padding: 0.7em;
+}
+.hyperlink-list {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* padding: 3em 0 0 23rem; */
+  margin: 0 20.5rem 2rem 0;
+  font-size: 1.4rem;
+  justify-self: end;
+  align-self: end;
+  padding-left: 0px;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+
+}
