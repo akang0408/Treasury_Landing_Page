@@ -16,8 +16,11 @@ const privacySpan = document.getElementsByClassName('close')[0];
 // Get the <span> element that closes the system description modal
 const systemDescSpan = document.getElementsByClassName('close')[1];
 
-// Get the button that redirects to ID.me OAuth
-const oAuthButton = document.getElementById('OAuth');
+// Get the button that redirects to ID.me OAuth sign in
+const primarySignIn = document.getElementById('primary-signin');
+
+// Get the button that redirects user to create a new ID.me account
+const secondarySignIn = document.getElementById('secondary-signin');
 
 // When the user clicks on the Privacy Act Statement text, open the modal
 privacyAct.onclick = function () {
@@ -47,7 +50,12 @@ window.onclick = function (event) {
   }
 };
 
-// When user clicks the ID.me button redirect to https://id.me
-oAuthButton.onclick = function () {
+// When user clicks the ID.me sign in button redirect to https://id.me
+primarySignIn.onclick = function () {
+  window.location.href = 'https://www.id.me';
+};
+
+// When user clicks the create ne ID.me account button redirect to https://id.me
+secondarySignIn.onclick = function () {
   window.location.href = 'https://www.id.me';
 };

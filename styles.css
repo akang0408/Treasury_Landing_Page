@@ -1,85 +1,164 @@
-/* mobile first css design */
+/* mobile first css  */
 /* base styles */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Bitter", "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
+  line-height: 1.3;
+  margin: 0.5rem 1rem;
 }
-
-button {
-  background:#00B050;
-  border: 1px solid grey;
-  font-weight: 500;
-  color: white;
-  border-radius: 10px;
-  padding: 1.2em 2.5em;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.6);
-  font-size: 1em;
-}
-
-button:hover {
-  background: #0ca157;
-  border: 1px solid grey;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-}
-
 p {
   margin: 0;
   padding: 0;
 }
-
 h1 {
-  font-size: 32px;
+  font-family: "Bitter", Georgia, "Cambria", "Times New Roman", Times, serif;
+  font-size: 2rem;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 0.07em 0.3em 0.07em;
+  padding: 0rem;
 }
-
 h3 {
-  margin-top: 1.2em;
-  margin-bottom: 0.3em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
   padding-bottom: 0;
   padding-left: 20px;
+  font-size: 1.15rem;
 }
-
 img {
   padding: 1em;
-  width: 110px;
-  height: 110px;
+  width: 7rem;
+  height: 7rem;
 }
-
 ul.lists {
   margin-top: 5;
-  /* padding-top: 0; */
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
-
 p.bold {
   font-size: 1em;
   font-weight: bolder;
+  margin-top: 0;
+  padding-top: 0;
 }
-
-footer {
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .75em;
+  font-size: 16px;
+  margin: 1em 0;
+  white-space: normal!important;
+  border-radius: 5px;
+  line-height: 1;
+}
+.button-primary {
+  background: #2e8540!important;
+  color: white;
+}
+.button-secondary {
+  color: #2e8540;
+  border-color: #2e8540;
+  background-color: white;
+  margin-bottom: 0;
+}
+.button-primary #id-me, .button-secondary #id-me {
+  padding: 0;
+  margin: 0 0.4em 0.1em 0;
+}
+.signin-actions {
+  padding: 1em 2em 1em;
+  text-align: center;
+}
+.signin-actions-container {
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+    margin: 0px auto;
+    margin-bottom: 1.5rem;
+}
+.signin-actions-container .top-banner {
+  text-align: center;
+  font-style: italic;
+  padding: 0.5em 0px 0.3em 0;
+  background: rgb(238, 238, 238);
   font-size: 0.8rem;
-  /* position: absolute; */
+}
+.signin-actions-container .top-banner #lock-icon {
+  height: 0.9rem;
+  width: 1rem;
+  vertical-align: baseline;
+  padding: 0px 0.4em;
+}
+#id-me {
+  height: 1rem;
+  width: 2rem;
+  vertical-align: middle;
+  padding: 0 0.4em;
+  margin-bottom: 0.3rem;
+}
+h2.container-banner {
+  font-size: 1rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.button-container {
+ text-align: center;
+}
+span.sidelines {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+span.sidelines:after, span.sidelines:before {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 2px;
+  content: "\A0";
+  background-color: #eee;
+}
+span.sidelines:before {
+  margin-left: -52%;
+  text-align: right;
+}
+span.sidelines:after {
+  margin-left: 2%;
+}
+.button-primary:hover {
+  background: #036603 !important;
+}
+.button-secondary:hover {
+  color: #033d03;
+  border-color: #033d03;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-div {
+  font-size: 0.8rem;
   bottom: 0;
   width: 95%;
   margin: 1em 0.2em;
   font-size: 1em;
-  /* height: 1rem;  */
+  padding-left: 0.5rem;
 }
-div.sign-in {
-  text-align: center;
-  padding-top: 1.1em;
-  margin-bottom: 2em;
-}
-
 .hyperlink-list {
-  padding-left: 18px;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin: 1em 0;
 }
 
@@ -87,10 +166,13 @@ div.sign-in {
   list-style-type: none;
   padding: 0.05em;
 }
+
 #system-description, #privacy-act {
   text-decoration: underline;
   color: blue;
   cursor: pointer;
+  min-width: 15rem;
+  margin-left: 1.5rem
 }
 /* The Privacy Modal (background) */
 .privacy-modal {
@@ -105,7 +187,6 @@ div.sign-in {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Privacy Modal Content/Box */
 .privacy-modal-content {
   background-color: #fefefe;
@@ -114,7 +195,6 @@ div.sign-in {
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -122,14 +202,12 @@ div.sign-in {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
 /* The System Description Modal (background) */
 .system-desc-modal {
   display: none; /* Hidden by default */
@@ -143,7 +221,6 @@ div.sign-in {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* System Description Modal Content/Box */
 .system-desc-modal-content {
   background-color: #fefefe;
@@ -153,84 +230,52 @@ div.sign-in {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+@media screen and (min-width: 770px) {
+  img {
+    width: 9rem;
+    height: 9rem;
+  }
+  div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 2fr 1fr; */
+  }
+  .signin-actions-container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    width: 85%;
+    margin-top: 2.5rem;
+  }
+  .hyperlink-list {
+    align-self: end;
+    justify-self: start;
+    width: 85%;
+    margin-left: 0.4rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .list-grid {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .footer-div {
+    line-height: 1.5;
+    width: 85%;
+  }
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+@media screen and (min-width: 1100px) {
+  .hyperlink-list {
+    margin-left: 1rem;
+  }
+  body {
+    margin: 1rem 0 1rem 5rem;
+  }
 }
 
-
-/* large tablets and laptop styles */
-@media screen and (min-width: 920px) {
-img {
-  width: 170px;
-  height: 170px;
-}
-h1 {
-  font-size: 2.7em;
-  padding: 1.37rem;
-}
-button {
-  width: 28rem;
-  height: 5rem;
-  font-size: 1.4rem;
-  padding: 1.5rem 
-}
-div.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.sign-in {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  /* margin: 3rem 0 0 15rem; */
-  justify-self: end;
-  align-self: end;
-  margin: 2rem 6.7rem 0 0;
-}
-.list-grid {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  font-size: 1.3em;
-  padding: 0.7em;
-}
-.hyperlink-list {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  /* padding: 3em 0 0 23rem; */
-  margin: 0 20.5rem 2rem 0;
-  font-size: 1.4rem;
-  justify-self: end;
-  align-self: end;
-  padding-left: 0px;
-}
-
-footer {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-}
-
-/* desktop styles */
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1300px) {
+  .hyperlink-list {
+    margin-left: 1.7rem;
+  }
 }

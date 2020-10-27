@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet"> -->
   <script type="text/javascript" src="/index.js" async></script>
 
   <title>Treasury Landing Page</title>
@@ -19,14 +21,41 @@
   </div>
 </div>
 
-  <h1>System to Administer Retirements (STAR)</h1>
+  <h1><strong>System to Administer Retirements (STAR)</strong></h1>
 
   <div class="grid-container">
 
-  <div class="sign-in">
-    <button id="OAuth">Sign with or Create an ID.me account</button>
+  <div class=signin-actions-container>
+    <div class="top-banner">
+      <div>
+        <img id="lock-icon" aria-hidden="true" role="presentation" alt="ID.me" src="https://www.va.gov/img/signin/lock-icon.svg">
+        Secured & powered by
+        <img id="id-me"aria-hidden="true" role="presentation" alt="ID.me" src="https://www.va.gov/img/signin/idme-icon-dark.svg">
+      </div>
+    </div>
+    <div class="signin-actions">
+      <h2 class="container-banner">
+        Sign in with an existing account
+      </h2>
+
+      <button id="primary-signin" class="button-primary">
+        <img id="id-me" aria-hidden="true" role="presentation" alt="ID.me" src="https://www.va.gov/img/signin/idme-icon-white.svg">
+        <strong> Sign in with ID.me</strong>
+      </button>
+      <span class="sidelines">
+        <strong>OR</strong>
+      </span>
+      <div class="alternate-signin"></div>
+      <h2 class="container-banner">
+        Don't have those accounts?
+      </h2>
+      <button id="secondary-signin" class="button-secondary">
+        <img id="id-me" aria-hidden="true" role="presentation" alt="ID.me" src="https://www.va.gov/img/signin/idme-icon-dark.svg">
+        <strong>Create an ID.me account</strong>
+      </button>
+    </div>    
+  
   </div>
-  <!-- <button class="sign-in">Sign with or Create an ID.me account</button> -->
 
   <div class="list-grid">
   <div>
@@ -84,14 +113,14 @@
   
   </div>
 
-  <footer>
+  <div class="footer-div">
     <p class="bold">A secure account powered by ID.me</p>
     <p>
       ID.me is our trusted technology partner in helping to keep your personal information safe.
       They specialize in digital identity protection and help us make sure you're you--and not someone pretending to be you--before
       we give you access to your information.
     </p>
-  </footer>
+  </div>
 </div>
 </body>
 
