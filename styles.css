@@ -242,7 +242,7 @@ span.sidelines:after {
     grid-column-start: 1;
     grid-column-end: 2;
     align-self: center;
-    width: 85%;
+    width: 80%;
     margin-top: 2.5rem;
   }
   .hyperlink-list {
