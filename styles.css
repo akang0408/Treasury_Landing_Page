@@ -15,7 +15,7 @@ h1 {
   font-family: "Bitter", Georgia, "Cambria", "Times New Roman", Times, serif;
   font-size: 2rem;
   text-align: center;
-  margin: 0 0.07em 0.3em 0.07em;
+  margin: 0 0.07em 0.7em 0.07em;
   padding: 0rem;
 }
 h3 {
@@ -275,5 +275,14 @@ span.sidelines:after {
 @media screen and (min-width: 1300px) {
   .hyperlink-list {
     margin-left: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .hyperlink-list {
+    margin-left: 2rem;
+  }
+  body {
+    margin-left: 8rem;
   }
 }
