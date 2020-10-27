@@ -248,8 +248,8 @@ span.sidelines:after {
   .hyperlink-list {
     align-self: end;
     justify-self: start;
-    width: 85%;
-    margin-left: 0.4rem;
+    width: 80%;
+    margin-left: 1rem;
     line-height: 1.5;
     font-size: 1.2rem;
   }
@@ -265,7 +265,7 @@ span.sidelines:after {
 
 @media screen and (min-width: 1100px) {
   .hyperlink-list {
-    margin-left: 1rem;
+    margin-left: 1.6em;
   }
   body {
     margin: 1rem 0 1rem 5rem;
@@ -274,7 +274,7 @@ span.sidelines:after {
 
 @media screen and (min-width: 1300px) {
   .hyperlink-list {
-    margin-left: 1.7rem;
+    margin-left: 2.3rem;
   }
 }
 
