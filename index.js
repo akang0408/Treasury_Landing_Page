@@ -26,9 +26,15 @@ const secondarySignIn = document.getElementById('secondary-signin');
 privacyAct.onclick = function () {
   privacyModal.style.display = 'block';
 };
+privacyAct.onkeypress = function () {
+  privacyModal.style.display = 'block';
+};
 
 // When the user clicks on the System Description text, open the modal
 systemDesc.onclick = function () {
+  systemDescModal.style.display = 'block';
+};
+systemDesc.onkeypress = function () {
   systemDescModal.style.display = 'block';
 };
 
@@ -41,6 +47,7 @@ privacySpan.onclick = function () {
 systemDescSpan.onclick = function () {
   systemDescModal.style.display = 'none';
 };
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
